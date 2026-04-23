@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mcd_2"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-26 08:41:41 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA4OjMzOjAyIGEu4oCvbS47MTAzOTU="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA4OjQxOjQxIGEu4oCvbS47MTsxMDUwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, r" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <while expression="b !=0">
+                <assign variable="r" expression="a%b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="r"/>
+            </while>
+            <output expression="a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

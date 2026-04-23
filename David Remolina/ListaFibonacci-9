@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int num, a=0, b=1, i, next;
+    cout << "Ingrese Un Entero: ";
+    cin >> num;
+    cout << a << endl;
+    cout << b << endl;
+    while (b <= num)
+    {
+        next = a + b;
+        if (next <= num)
+        {
+            cout << next << endl;
+            i = b;
+            b = next;
+            a = i;
+        }
+        else
+        {
+            b = num;
+            b = b + 1;
+        }        
+    }    
+}

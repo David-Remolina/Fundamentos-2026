@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int num=1, contadorP=0, contadorN=0, p=0, n=0 ;
+    float promedioP, promedioN;
+    cout << "Ingrese numeros (0 para finalizar): ";
+    while (num != 0)
+    {
+        cin >> num;
+        if (num > 0)
+        {
+            contadorP = contadorP + 1;
+            p = p + num;
+        }
+        else
+        {
+            contadorN = contadorN + 1; 
+            n = n + 1;
+        }
+    }
+    promedioP = ((p / contadorP)*100)/100;
+    promedioN = ((n / contadorN)*100)/100;
+    if (contadorN = 0)
+    {
+        cout << " El promedio de los Negativos es: (NA)";
+    }
+    else 
+    {
+        cout << " El promedio de los Negativos es: " << promedioN << endl;
+    }
+    if (contadorP = 0)
+    {
+        cout << " El promedio de los Positivos es: (NA)";
+    }
+    else 
+    {
+        cout << " El promedio de los Positivos es: " << promedioP << endl;
+    }
+
+   

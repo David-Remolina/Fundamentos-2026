@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_6"/>
+        <attribute name="authors" value="WIN10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-12 10:00:36 p. m."/>
+        <attribute name="created" value="V0lOMTA7REVTS1RPUC0zNzNPRk9NOzIwMjYtMDMtMTI7MDk6MDU6NDAgcC4gbS47Mjg0Ng=="/>
+        <attribute name="edited" value="V0lOMTA7REVTS1RPUC0zNzNPRk9NOzIwMjYtMDMtMTI7MTA6MDA6MzYgcC4gbS47MjsyOTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="rta" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="rta" expression="&quot; &quot;"/>
+            <while expression="i &lt;= n">
+                <if expression="i%2=0">
+                    <then>
+                        <assign variable="rta" expression="&quot;Es divisible entre 2&quot;"/>
+                        <output expression="i &amp; &quot;: &quot; &amp; rta" newline="True"/>
+                        <if expression="i%3=0">
+                            <then>
+                                <output expression="&quot; y 3&quot;" newline="True"/>
+                                <if expression="i%5=0">
+                                    <then>
+                                        <output expression="&quot; y 5&quot;" newline="True"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="i%5=0">
+                                    <then>
+                                        <output expression="&quot; y 5.&quot;" newline="True"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="i%3=0">
+                            <then>
+                                <assign variable="rta" expression="&quot;Es divisible entre 3&quot;"/>
+                                <output expression="i &amp; &quot;: &quot; &amp; rta" newline="True"/>
+                                <if expression="i%5=0">
+                                    <then>
+                                        <output expression="&quot; y 5.&quot;" newline="True"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="i%5=0">
+                                    <then>
+                                        <assign variable="rta" expression="&quot;Es divisible entre 5&quot;"/>
+                                        <output expression="i &amp; &quot;: &quot; &amp; rta" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="i &amp; &quot;:&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

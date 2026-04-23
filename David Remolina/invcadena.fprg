@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="invcadena"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 09:48:14 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTA1OzA4OjQxOjE5IGEu4oCvbS47MTA0MDA="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTA1OzA5OjAwOjU4IGEu4oCvbS47MTtDRU5USUM7My05LTEyOzIwMjYtMDMtMDM7MDk6Mjc6NDAgYS7igK9tLjtzZW4uZnByZzsyMTgyNQ=="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTA1OzA5OjQ4OjE0IGEu4oCvbS47MjsxMDUxMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, resultado" type="String" array="False" size=""/>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <output expression="&quot;El caracter en la posicion 1 es &quot; &amp; char (numero,1)" newline="True"/>
+            <output expression="&quot; El numero de caracteres es &quot; &amp; len(numero)" newline="True"/>
+            <output expression="&quot;El resultado es &quot; &amp; numero" newline="True"/>
+            <assign variable="n" expression="len(numero)"/>
+            <assign variable="resultado" expression="&quot;&quot;"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="char (numero,i)" newline="True"/>
+                <assign variable="resultado" expression="char(numero,i) &amp; resultado"/>
+            </for>
+            <output expression="resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

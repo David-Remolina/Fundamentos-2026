@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_3"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-12 09:49:07 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTEwOzA5OjIwOjQ5IGEu4oCvbS47MTAzOTc="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTEyOzA5OjQ5OjA3IGEu4oCvbS47MjsxMDUxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ncuadrado, n" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="ncuadrado" expression="0"/>
+            <if expression="n&gt;0">
+                <then>
+                    <assign variable="ncuadrado" expression="n^(1/2)"/>
+                    <if expression="ncuadrado%1=0">
+                        <then>
+                            <output expression="ncuadrado &amp; &quot; es el cuadrado perfecto de ese numero&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;no es cuadrado perfecto&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Este valor no se puede ejecutar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_10"/>
+        <attribute name="authors" value="WIN10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-12 10:07:52 p. m."/>
+        <attribute name="created" value="V0lOMTA7REVTS1RPUC0zNzNPRk9NOzIwMjYtMDMtMTI7MTA6MDA6MzggcC4gbS47Mjg0MA=="/>
+        <attribute name="edited" value="V0lOMTA7REVTS1RPUC0zNzNPRk9NOzIwMjYtMDMtMTI7MTA6MDc6NTIgcC4gbS47MTsyOTUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, n, b, next" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un entero&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <while expression="b &lt;= n">
+                <assign variable="next" expression="a+b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="next"/>
+            </while>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

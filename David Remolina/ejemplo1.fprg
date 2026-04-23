@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ejemplo1"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-17 09:13:49 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDO0hCMy05OzIwMjYtMDItMTc7MDg6MTI6MjMgYS7igK9tLjsxMDM4OQ=="/>
+        <attribute name="edited" value="Q0VOVElDO0hCMy05OzIwMjYtMDItMTc7MDk6MTM6NDkgYS7igK9tLjszOzEwNTA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i &lt; n">
+                <assign variable="i" expression="i + 1"/>
+                <output expression="i" newline="True"/>
+            </while>
+            <output expression="&quot;El valor final de i es &quot; &amp; i" newline="True"/>
+            <assign variable="i" expression="0"/>
+            <do expression="i &lt; n">
+                <assign variable="i" expression="i + 1"/>
+                <output expression="i" newline="True"/>
+            </do>
+            <output expression="&quot;El valor final de i es &quot; &amp; i" newline="True"/>
+            <for variable="i" start="0" end="n" direction="inc" step="1">
+                <output expression="i" newline="True"/>
+            </for>
+            <output expression="&quot;El valor final de i es &quot; &amp; i" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

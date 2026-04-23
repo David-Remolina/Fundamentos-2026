@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonacci"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-26 09:04:00 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA4OjQxOjQ0IGEu4oCvbS47MTA0MDA="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA5OjA0OjAwIGEu4oCvbS47MTsxMDUwMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ult, penult, suma, i, max" type="Integer" array="False" size=""/>
+            <input variable="max"/>
+            <assign variable="penult" expression="0"/>
+            <assign variable="ult" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <output expression="penult" newline="True"/>
+            <output expression="ult" newline="True"/>
+            <for variable="i" start="3" end="max" direction="inc" step="1">
+                <assign variable="suma" expression="ult+penult"/>
+                <assign variable="penult" expression="ult"/>
+                <assign variable="ult" expression="suma"/>
+                <output expression="ult" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

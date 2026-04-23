@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_9"/>
+        <attribute name="authors" value="WIN10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-12 10:24:09 p. m."/>
+        <attribute name="created" value="V0lOMTA7REVTS1RPUC0zNzNPRk9NOzIwMjYtMDMtMTI7MTA6MDc6NTUgcC4gbS47Mjg0Ng=="/>
+        <attribute name="edited" value="V0lOMTA7REVTS1RPUC0zNzNPRk9NOzIwMjYtMDMtMTI7MTA6MjQ6MDkgcC4gbS47MjsyOTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, b, i, next" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un entero: &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <output expression="&quot;0&quot;" newline="True"/>
+            <output expression="&quot;1&quot;" newline="True"/>
+            <while expression="b&lt;=n">
+                <assign variable="next" expression="a+b"/>
+                <if expression="next &gt; n">
+                    <then>
+                        <assign variable="b" expression="n"/>
+                        <assign variable="b" expression="b+1"/>
+                    </then>
+                    <else>
+                        <output expression="next" newline="True"/>
+                        <assign variable="i" expression="b"/>
+                        <assign variable="b" expression="next"/>
+                        <assign variable="a" expression="i"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

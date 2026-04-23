@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="primos2"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-26 09:35:28 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA5OjI0OjUwIGEu4oCvbS47MTAzOTk="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA5OjI3OjE1IGEu4oCvbS47MTtDRU5USUM7My05LTEyOzIwMjYtMDItMjY7MDk6MDg6MzUgYS7igK9tLjsyMDk3NA=="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA5OjM1OjI4IGEu4oCvbS47MTsxMDUxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, num, divisores" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="i" expression="2"/>
+            <assign variable="divisores" expression="0"/>
+            <if expression="num &gt;=2">
+                <then>
+                    <while expression="i&lt;num">
+                        <if expression="num % i ==0">
+                            <then>
+                                <assign variable="divisores" expression="divisores+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                    <if expression="divisores=0">
+                        <then>
+                            <output expression="&quot;primo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;no primo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;no es primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

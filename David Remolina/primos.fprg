@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="primos"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-26 09:24:47 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA5OjA4OjM1IGEu4oCvbS47MTA0MDQ="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA5OjI0OjQ3IGEu4oCvbS47MTsxMDUxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, secuencia" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="secuencia" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <if expression="n % i==0">
+                    <then>
+                        <assign variable="secuencia" expression="secuencia+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="secuencia ==2">
+                <then>
+                    <output expression="n &amp;&quot;es primo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="n &amp;&quot;no es primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_4"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-12 09:56:48 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTEwOzA5OjMzOjU5IGEu4oCvbS47MTA0MDI="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTEyOzA5OjU2OjQ4IGEu4oCvbS47MjsxMDUxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, mcm, r" type="Real" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <assign variable="mcm" expression="0"/>
+            <assign variable="r" expression="0"/>
+            <if expression="n1%2=0">
+                <then>
+                    <if expression="n2%2=0">
+                        <then>
+                            <while expression="n2 != 0">
+                                <assign variable="r" expression="n1%n2"/>
+                                <assign variable="n1" expression="n2"/>
+                                <assign variable="n2" expression="r"/>
+                            </while>
+                            <output expression="&quot; El mcd es &quot; &amp; n1" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="mcm" expression="n1*n2"/>
+                            <while expression="n2 != 0">
+                                <assign variable="r" expression="n1%n2"/>
+                                <assign variable="n1" expression="n2"/>
+                                <assign variable="n2" expression="r"/>
+                            </while>
+                            <assign variable="mcm" expression="mcm / n1"/>
+                            <output expression="&quot; El mcm es &quot; &amp; mcm" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="n2%2=0">
+                        <then>
+                            <assign variable="mcm" expression="n1*n2"/>
+                            <while expression="n2 != 0">
+                                <assign variable="r" expression="n1%n2"/>
+                                <assign variable="n1" expression="n2"/>
+                                <assign variable="n2" expression="r"/>
+                            </while>
+                            <assign variable="mcm" expression="mcm / n1"/>
+                            <output expression="&quot; El mcm es &quot; &amp; mcm" newline="True"/>
+                        </then>
+                        <else>
+                            <while expression="n2 != 0">
+                                <assign variable="r" expression="n1%n2"/>
+                                <assign variable="n1" expression="n2"/>
+                                <assign variable="n2" expression="r"/>
+                            </while>
+                            <output expression="&quot; El mcd es &quot; &amp; n1" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

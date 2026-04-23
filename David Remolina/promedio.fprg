@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="promedio"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-24 08:16:47 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI0OzA4OjA4OjQ4IGEu4oCvbS47MTA0MDU="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI0OzA4OjE2OjQ3IGEu4oCvbS47MTsxMDUxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, numeroNotas" type="Integer" array="False" size=""/>
+            <declare name="suma, promedio, notai" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cuantas notas quiere promediar&quot;" newline="True"/>
+            <input variable="numeroNotas"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="suma" expression="0"/>
+            <while expression="i&lt;numeroNotas">
+                <do expression="notai&lt;0"/>
+                <input variable="notai"/>
+                <assign variable="suma" expression="suma+notai"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="promedio" expression="suma/numeroNotas"/>
+            <if expression="promedio&gt;=3.0">
+                <then>
+                    <output expression="&quot;Aprobado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Reprobado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="multiplicacion"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-19 09:24:13 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTE5OzA4OjI5OjE4IGEu4oCvbS47MTA0MDk="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTE5OzA5OjI0OjEzIGEu4oCvbS47MTsxMDUwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, resultado, limite" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="limite"/>
+            <for variable="i" start="1" end="limite" direction="inc" step="1">
+                <assign variable="resultado" expression="n*i"/>
+                <output expression="n&amp; &quot;x&quot; &amp;i &amp; &quot;=&quot; &amp;resultado" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

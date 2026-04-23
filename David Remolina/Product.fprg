@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Product"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-24 09:13:21 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI0OzA4OjU1OjA5IGEu4oCvbS47MTA0MDQ="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI0OzA5OjEzOjIxIGEu4oCvbS47MTsxMDUwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <declare name="product" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <assign variable="product" expression="1"/>
+            <while expression="i&lt;=n">
+                <assign variable="product" expression="product*(i)/(2)"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="product" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

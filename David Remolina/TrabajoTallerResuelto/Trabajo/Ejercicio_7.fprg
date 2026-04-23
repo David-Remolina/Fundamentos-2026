@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_7"/>
+        <attribute name="authors" value="WIN10"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-13 07:27:12 p. m."/>
+        <attribute name="created" value="V0lOMTA7REVTS1RPUC0zNzNPRk9NOzIwMjYtMDMtMTM7MDc6MDk6MzQgcC4gbS47Mjg1Mg=="/>
+        <attribute name="edited" value="V0lOMTA7REVTS1RPUC0zNzNPRk9NOzIwMjYtMDMtMTM7MDc6Mjc6MTIgcC4gbS47MTsyOTU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, pos, neg, total" type="Integer" array="False" size=""/>
+            <declare name="Ppos, Pneg" type="Real" array="False" size=""/>
+            <assign variable="pos" expression="0"/>
+            <assign variable="neg" expression="0"/>
+            <assign variable="total" expression="0"/>
+            <assign variable="n" expression="1"/>
+            <output expression="&quot;Ingrese Numero:(0: Terminar)&quot;" newline="True"/>
+            <while expression="n!=0">
+                <input variable="n"/>
+                <if expression="n!=0">
+                    <then>
+                        <if expression="n&lt;0">
+                            <then>
+                                <assign variable="neg" expression="neg+1"/>
+                                <assign variable="total" expression="total+1"/>
+                            </then>
+                            <else>
+                                <assign variable="pos" expression="pos+1"/>
+                                <assign variable="total" expression="total+1"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <if expression="pos&gt;0">
+                <then>
+                    <output expression="&quot;positivos: &quot; &amp; pos" newline="True"/>
+                    <assign variable="Ppos" expression="pos/total"/>
+                    <output expression="&quot;Promedio de positivos: &quot; &amp; Ppos" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="neg&gt;0">
+                <then>
+                    <output expression="&quot;Negativos: &quot; &amp; neg" newline="True"/>
+                    <assign variable="Pneg" expression="neg/total"/>
+                    <output expression="&quot;Promedio de negativos: &quot; &amp; Pneg" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

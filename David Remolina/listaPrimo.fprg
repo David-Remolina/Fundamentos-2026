@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="listaPrimo"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-26 10:19:08 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA5OjUyOjI2IGEu4oCvbS47MTA0MDM="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzA5OjUyOjI5IGEu4oCvbS47MTtDRU5USUM7My05LTEyOzIwMjYtMDItMjY7MDk6MjQ6NTAgYS7igK9tLjtwcmltb3MyLmZwcmc7MjIyMjQ="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI2OzEwOjE5OjA4IGEu4oCvbS47MTsxMDUwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, divisores, a" type="Integer" array="False" size=""/>
+            <assign variable="divisores" expression="0"/>
+            <input variable="n"/>
+            <if expression="n &gt;=2">
+                <then>
+                    <for variable="i" start="2" end="n" direction="inc" step="1">
+                        <for variable="a" start="2" end="Sqrt(i)" direction="inc" step="1">
+                            <if expression="i % a ==0">
+                                <then>
+                                    <assign variable="divisores" expression="divisores+1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </for>
+                        <if expression="divisores&gt;0">
+                            <then/>
+                            <else>
+                                <output expression="i &amp; &quot;,&quot;" newline="False"/>
+                            </else>
+                        </if>
+                        <assign variable="divisores" expression="0"/>
+                    </for>
+                </then>
+                <else>
+                    <output expression="&quot;No hay&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

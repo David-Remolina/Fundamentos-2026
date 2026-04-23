@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_1"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-10 08:34:23 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTEwOzA4OjExOjMyIGEu4oCvbS47MTAzODg="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTEwOzA4OjM0OjIzIGEu4oCvbS47MTsxMDUwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, contador, suma, media" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="contador" expression="0"/>
+            <assign variable="suma" expression="0"/>
+            <assign variable="media" expression="0"/>
+            <while expression="i&lt;n">
+                <if expression="n%2=0">
+                    <then>
+                        <assign variable="contador" expression="contador + 1"/>
+                        <assign variable="suma" expression="suma + n"/>
+                        <assign variable="media" expression="(suma) / contador"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="n" expression="n-1"/>
+            </while>
+            <output expression="&quot; Se contaron &quot; &amp; contador &amp; &quot; numeros pares &quot;" newline="True"/>
+            <output expression="&quot;Se tuvo una suma de &quot; &amp; suma" newline="True"/>
+            <output expression="&quot;La media de la suma de los numeros es &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

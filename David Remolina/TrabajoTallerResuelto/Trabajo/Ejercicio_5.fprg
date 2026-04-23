@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_5"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-12 10:41:09 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTEyOzEwOjAwOjA2IGEu4oCvbS47MTAzODI="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTEyOzEwOjEwOjM4IGEu4oCvbS47MTtDRU5USUM7My05LTEyOzIwMjYtMDMtMTA7MDk6MzM6NTkgYS7igK9tLjtFamVyY2ljaW9fNC5mcHJnOzIyNTQ5"/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTEyOzEwOjQxOjA5IGEu4oCvbS47MTsxMDQ5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="res, n, a, base" type="Integer" array="False" size=""/>
+            <declare name="rta" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <output expression="&quot;Ingrese la base (2,4,8)&quot;" newline="True"/>
+            <input variable="base"/>
+            <assign variable="a" expression="n"/>
+            <assign variable="rta" expression="&quot; &quot;"/>
+            <while expression="a &gt; 0">
+                <assign variable="res" expression="a%base"/>
+                <assign variable="rta" expression="ToString(res) &amp; rta"/>
+                <assign variable="a" expression="a/base"/>
+            </while>
+            <output expression="rta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

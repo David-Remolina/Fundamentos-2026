@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PiAprox"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-24 08:55:05 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI0OzA4OjQ0OjM5IGEu4oCvbS47MTA0MDU="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTI0OzA4OjU1OjA1IGEu4oCvbS47MTsxMDUwOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <declare name="suma, paprox" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="suma" expression="0"/>
+            <while expression="i&lt;=n">
+                <assign variable="suma" expression="suma + (((-1)^i)/(2*i+1))"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="paprox" expression="4*suma"/>
+            <output expression="paprox" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

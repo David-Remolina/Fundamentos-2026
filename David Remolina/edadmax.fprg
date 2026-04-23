@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="edadmax"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-19 09:50:16 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTE5OzA5OjMwOjM3IGEu4oCvbS47MTA0MDM="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAyLTE5OzA5OjUwOjE2IGEu4oCvbS47MTsxMDUxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <do expression="edad &lt; 0 || edad &gt; 969">
+                <input variable="edad"/>
+            </do>
+            <output expression="edad" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

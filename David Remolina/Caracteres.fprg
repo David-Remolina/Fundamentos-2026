@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Caracteres"/>
+        <attribute name="authors" value="CENTIC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 10:26:47 a.&#8239;m."/>
+        <attribute name="created" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTA1OzA5OjQ4OjE2IGEu4oCvbS47MTA0MDU="/>
+        <attribute name="edited" value="Q0VOVElDOzMtOS0xMjsyMDI2LTAzLTA1OzEwOjI2OjQ3IGEu4oCvbS47MTsxMDUwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="original, cifrado, letra" type="String" array="False" size=""/>
+            <declare name="i, n, codigo" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <input variable="original"/>
+            <assign variable="n" expression="len(original)"/>
+            <while expression="i&lt;n">
+                <assign variable="letra" expression="char(original,i)"/>
+                <output expression="letra &amp; &quot; ( &quot;" newline="False"/>
+                <output expression="tocode(letra) &amp; &quot; ) &quot; &amp; &quot; ---&gt; &quot;" newline="False"/>
+                <assign variable="codigo" expression="(((ToCode(letra) - 97) +3)% 26)"/>
+                <output expression="ToChar(codigo+97)" newline="False"/>
+                <output expression="&quot; ( &quot; &amp; codigo &amp; &quot; ) &quot;" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
