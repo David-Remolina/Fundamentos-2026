@@ -5,7 +5,6 @@ int main()
     float nota, suma = 0.0, maximo = 0.0, minimo = 0.0, promedio = 0.0;
     int cantidad = 0, aprobados = 0, reprobados = 0;
     bool PrimeraN = true;
-    
     while(cin >> nota)
     {
         if(nota == -1)
@@ -43,12 +42,9 @@ int main()
         if (nota >= 3.0)
         {
             aprobados = aprobados + 1;
-        }
-                                   
+        }                               
     }
-
     promedio = suma / cantidad;
-
     cout << "Total de notas: "<< cantidad << endl;
     cout << "Promedio: "<< promedio << endl; 
     cout << "Nota minima: " << minimo << endl;

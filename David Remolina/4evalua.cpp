@@ -1,41 +1,36 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
-    int n, res, cos, a, b, base2 = 0, pot = 1, Vhex[2], i = 0, j = 1;    
+    int n, num2, num16, res;
+    string base2 = "", base16 = "";
     cout << "Ingrese un numero en base 10 [1-255]: ";
     cin >> n;
-    if (n < 1 || n > 255)
+    if (n >= 1 && n <= 255)
     {
-        cout << "Numero no valido." << endl;
-    }
-    else
-    {
-        a = n;
-        while (a > 0)
+        num2 = n;
+        num16 = n;
+        while (num2 != 0)
         {
-            res = a % 2;
-            base2 = base2 + res * pot;
-            pot = pot * 10;
-            a = a / 2;
+            base2 = to_string((num2%2)) + base2;
+            num2 = num2/2;
         }
-        cout << n << " en base 2: " << base2 << endl;        
-        b = n;
-        cout << n << " en base 16: ";
-        while (b > 0)
+        while (num16 != 0)
         {
-            res = b % 16;
-            temp[i] = res;
-            b = b / 16;
-            i=i+1;
+            res = num16 % 16;
+            if(res<10)
+            {
+                base16 = to_string((num16%16)) + base16;
+            }
+            else 
+            {
+                char letra = 'A' + (res-10);
+                base16 = letra + base16;
+            }
+            num16 = num16/16;        
         }
-        for (j = i - 1; j >= 0; j--)
-        {
-            cos = temp[j];
-            if (cos < 10)
-                cout << cos;
-            else
-                cout << char(cos - 10 + 'A') << endl;
-        }
-    }
+        cout << n << " en base 2 es: " << base2 << endl;
+        cout << n << " en base 16 es: " << base16;
+    }        
 }
