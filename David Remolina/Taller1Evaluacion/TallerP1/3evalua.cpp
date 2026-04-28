@@ -52,6 +52,3 @@ int main()
     cout << "Total de Aprobados: " << aprobados << endl;
     cout << "Total de Reprobados: " << reprobados << endl;
 }
-
-
-

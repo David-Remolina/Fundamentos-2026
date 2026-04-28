@@ -4,7 +4,7 @@ int main()
 {
     long long num, max = 0, pasos = 0;
     bool Valorinicial = true;
-    cout << " Ingrese un valor mayor o igual a 1: ";
+    cout << " Ingrese un valor mayor o igual a 1: " << endl;
     cin >> num;
     while(num != 1)
     {
